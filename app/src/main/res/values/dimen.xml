@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_default">13sp</dimen>
+    <dimen name="title_size_default">16sp</dimen>
+    <dimen name="title_nav_size_default">22sp</dimen>
+    <dimen name="subtitle_nav_size_default">17sp</dimen>
+    <dimen name="title_my_day_size_default">24sp</dimen>
+    <dimen name="subtitle_my_day_size_default">20sp</dimen>
+</resources>

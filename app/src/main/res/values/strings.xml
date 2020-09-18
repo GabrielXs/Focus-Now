@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Focus Now</string>
+    <string name="meu_dia">Meu Dia</string>
+    <string name="criar_tarefas">Criar Tarefas</string>
+    <string name="ordenar_tarefas">Ordenar Tarefas</string>
+    <string name="iniciando_tarefa">Iniciando Tarefa</string>
+    <string name="lista_de_tarefas">Lista de Tarefas</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="sobre">Sobre</string>
+    <string name="cafe">Café</string>
+    <string name="aplicativos_bloqueados">Aplicativos Bloqueados</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="relatorios">Relatórios</string>
+    <string name="tarefas">Tarefas</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ajuda_para_o_cafezinho">Ajuda para o Cafézinho</string>
+    <string name="qtde_concluido"> %s de %s</string>
+    <string name="editar_tarefas">Editar tarefa</string>
+    <string name="excluir_tarefas">Excluir tarefa</string>
+    <string name="opendrawer">Abrindo Menu Principal</string>
+    <string name="closedrawer">Fechando Menu Principal</string>
+    <string name="cadastrar_tarefas">Cadastrar Tarefas</string>
+    <string name="descricao">descrição</string>
+    <string name="adicionar_tarefas">Adicionar Tarefas</string>
+    <string name="categoria">Categoria</string>
+    <string name="sem_categoria">Sem Categoria</string>
+    <string name="adicionar_ao_meu_dia">Adicionar ao Meu Dia</string>
+    <string name="lembra_me">Lembrar-me</string>
+    <string name="data_de_conclusao">Data de conclusão</string>
+    <string name="pomodoro">Pomodoro</string>
+    <string name="repetir">Repetir</string>
+    <string name="anexo">Anexo</string>
+    <string name="adicionar_anotacao">Adicionar Anotação</string>
+</resources>

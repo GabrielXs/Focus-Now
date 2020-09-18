@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/my_day"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/meu_dia"/>
+
+        <item
+            android:id="@+id/task"
+            android:icon="@drawable/ic_task"
+            android:title="@string/tarefas"/>
+
+        <item
+            android:id="@+id/print"
+            android:icon="@drawable/ic_print"
+            android:title="@string/relatorios"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/configuracoes"/>
+
+        <item
+            android:id="@+id/app-lock"
+            android:icon="@drawable/ic_app_lock"
+            android:title="@string/aplicativos_bloqueados"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/donate"
+            android:icon="@drawable/ic_coffee"
+            android:title="@string/ajuda_para_o_cafezinho"/>
+
+        <item
+            android:id="@+id/sobre"
+            android:icon="@drawable/ic_info"
+            android:title="@string/sobre"/>
+    </group>
+
+</menu>

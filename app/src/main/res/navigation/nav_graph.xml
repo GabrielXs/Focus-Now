@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/meu_dia">
+
+    <fragment
+        android:id="@+id/meu_dia"
+        android:name="com.example.focus_now.ui.fragment.MyDay"
+        android:label="@string/meu_dia"
+        tools:layout="@layout/fragment_my_day">
+        <action
+            android:id="@+id/action_meu_dia_to_selecionar_tarefa"
+            app:destination="@id/ordernar_tarefas"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_meu_dia_to_iniciando_tarefa"
+            app:destination="@id/iniciando_tarefa"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_meu_dia_to_splash_screen2"
+            app:destination="@id/splash_screen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_meu_dia_to_criar_tarefas"
+            app:destination="@id/criar_tarefas" />
+    </fragment>
+    <fragment
+        android:id="@+id/criar_tarefas"
+        android:name="com.example.focus_now.ui.fragment.CreateTask"
+        android:label="@string/criar_tarefas"
+        tools:layout="@layout/fragment_create_task" />
+    <fragment
+        android:id="@+id/ordernar_tarefas"
+        android:name="com.example.focus_now.ui.fragment.OrderTask"
+        android:label="@string/ordenar_tarefas">
+        <action
+            android:id="@+id/action_selecionar_tarefa_to_iniciando_tarefa"
+            app:destination="@id/iniciando_tarefa"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/iniciando_tarefa"
+        android:name="com.example.focus_now.ui.fragment.StartTask"
+        android:label="@string/iniciando_tarefa"
+        tools:layout="@layout/fragment_start_task" />
+    <fragment
+        android:id="@+id/lista_tarefas"
+        android:name="com.example.focus_now.ui.fragment.ListTask"
+        android:label="@string/lista_de_tarefas"
+        tools:layout="@layout/fragment_list_task">
+        <action
+            android:id="@+id/action_lista_tarefas_to_criar_tarefas"
+            app:destination="@id/criar_tarefas" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_screen"
+        android:name="com.example.focus_now.ui.fragment.SplashScreen"
+        android:label="@string/splash_screen"
+        tools:layout="@layout/fragment_splash_screen"/>
+    <fragment
+        android:id="@+id/sobre"
+        android:name="com.example.focus_now.ui.fragment.About"
+        android:label="@string/sobre"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/cafe"
+        android:name="com.example.focus_now.ui.fragment.Coffee"
+        android:label="@string/cafe"
+        tools:layout="@layout/fragment_coffee" />
+    <fragment
+        android:id="@+id/app-lock"
+        android:name="com.example.focus_now.ui.fragment.AppLock"
+        android:label="@string/aplicativos_bloqueados"
+        tools:layout="@layout/fragment_app_lock" />
+    <fragment
+        android:id="@+id/configuracao"
+        android:name="com.example.focus_now.ui.fragment.Settings"
+        android:label="@string/configuracoes"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/relatorios"
+        android:name="com.example.focus_now.ui.fragment.Report"
+        android:label="@string/relatorios"
+        tools:layout="@layout/fragment_report" />
+    <action
+        android:id="@+id/action_global_relatorios"
+        app:destination="@id/relatorios"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/action_global_configuracao"
+        app:destination="@id/configuracao"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_app-lock"
+        app:destination="@id/app-lock"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/action_global_cafe"
+        app:destination="@id/cafe"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/action_global_sobre"
+        app:destination="@id/sobre"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/action_global_lista_tarefas"
+        app:destination="@id/lista_tarefas"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/action_global_criar_tarefas"
+        app:destination="@id/criar_tarefas"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/action_global_meu_dia"
+        app:destination="@id/meu_dia"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>
